@@ -1,0 +1,410 @@
+
+Index · HTML
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07060f">
+<title>AZ_KING.STORE | المنتجات الرقمية</title>
+<meta name="description" content="AZ_KING.STORE متجرك للألعاب والاشتراكات وشحن الألعاب وبطاقات الهدايا الرقمية.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👑%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#07060f;--card:#12101f;--card2:#191630;--line:#2a2548;--txt:#f1eefc;--mut:#9b94c4;--p:#8b5cf6;--c:#22d3ee;--g:#fbbf24;--red:#ef4444;--grad:linear-gradient(135deg,#8b5cf6,#22d3ee)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.6;overflow-x:hidden;background-image:radial-gradient(circle at 85% -10%,#2a1a5e55,transparent 45%),radial-gradient(circle at 5% 30%,#0b3b4a44,transparent 40%)}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:auto;padding:0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;border-radius:12px;font-weight:700;background:var(--grad);color:#07060f;transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #8b5cf655}
+.btn.o{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn.o:hover{border-color:var(--c);box-shadow:none}
+.btn.sm{padding:7px 12px;font-size:.85rem;border-radius:10px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:#07060fe6;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;font-size:1.15rem;letter-spacing:.5px;direction:ltr}
+.logo i{font-style:normal;width:36px;height:36px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:1.2rem}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:4px;margin-inline-start:12px}
+nav>div{position:relative}
+nav a,nav>div>button{padding:8px 12px;border-radius:10px;color:var(--mut);font-weight:600;display:block}
+nav a:hover,nav>div>button:hover{color:var(--txt);background:var(--card2)}
+.dd{position:absolute;top:100%;inset-inline-start:0;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;display:none;box-shadow:0 20px 40px #000a}
+nav>div:hover .dd,nav>div:focus-within .dd{display:block}
+.dd a{padding:8px 10px;font-size:.9rem}
+.sp{flex:1}
+.ib{width:42px;height:42px;border-radius:12px;background:var(--card2);display:grid;place-items:center;position:relative;font-size:1.15rem}
+.ib em{position:absolute;top:-5px;inset-inline-end:-5px;background:var(--red);font-style:normal;font-size:.7rem;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;padding:0 4px}
+#menuBtn{display:none}
+.sb{display:flex;gap:8px;padding:0 0 12px}
+.sb input{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px;outline:0}
+.sb input:focus{border-color:var(--p)}
+/* hero */
+.hero{position:relative;margin-top:18px;border-radius:24px;overflow:hidden;min-height:340px;border:1px solid var(--line)}
+.slide{position:absolute;inset:0;display:flex;align-items:center;padding:36px;opacity:0;transition:opacity .8s;pointer-events:none}
+.slide.on{opacity:1;pointer-events:auto}
+.slide .t{max-width:520px;position:relative;z-index:2}
+.slide h1{font-size:clamp(1.7rem,5vw,3rem);line-height:1.25;margin-bottom:10px}
+.slide p{color:#d6d0f5;margin-bottom:20px}
+.slide .big{position:absolute;inset-inline-end:6%;font-size:clamp(7rem,22vw,14rem);opacity:.9;filter:drop-shadow(0 20px 40px #0008);animation:fl 5s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-14px) rotate(4deg)}}
+.dots{position:absolute;bottom:14px;inset-inline:0;display:flex;justify-content:center;gap:8px;z-index:3}
+.dots button{width:9px;height:9px;border-radius:5px;background:#fff5;transition:.3s}
+.dots button.on{width:26px;background:#fff}
+/* ticker */
+.tick{overflow:hidden;margin:18px 0;border:1px solid var(--line);border-radius:14px;background:var(--card);direction:ltr}
+.tick div{display:flex;gap:42px;width:max-content;padding:12px 20px;animation:mq 28s linear infinite;color:var(--mut);font-weight:700}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:28px 0}
+.sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px}
+.sh h2{font-size:1.4rem;display:flex;align-items:center;gap:8px}
+.sh h2:before{content:"";width:5px;height:24px;border-radius:3px;background:var(--grad)}
+.tag{font-size:.75rem;background:#ef44441f;color:#ff8a8a;border:1px solid #ef444466;padding:2px 10px;border-radius:20px}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 12px;text-align:center;transition:.3s;cursor:pointer}
+.cat:hover{transform:translateY(-5px);border-color:var(--p);box-shadow:0 10px 30px #8b5cf633}
+.cat span{font-size:2.3rem;display:block;margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:.3s;animation:up .5s both}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.pc:hover{transform:translateY(-5px);border-color:var(--c);box-shadow:0 12px 32px #22d3ee22}
+.pc .im{position:relative;aspect-ratio:4/3;cursor:pointer;overflow:hidden}
+.pc .im img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.pc:hover .im img{transform:scale(1.07)}
+.bd{position:absolute;top:10px;inset-inline-start:10px;background:var(--red);font-size:.75rem;font-weight:800;padding:2px 9px;border-radius:8px}
+.bd.n{background:var(--g);color:#000}
+.pc .b{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pc h3{font-size:1rem}
+.pc p{color:var(--mut);font-size:.83rem;flex:1}
+.pr{display:flex;align-items:baseline;gap:8px}
+.pr b{font-size:1.15rem;color:var(--c)}
+.pr s{color:var(--mut);font-size:.82rem}
+.acts{display:flex;gap:8px;margin-top:6px}
+.acts .btn{flex:1;padding:8px 6px;font-size:.82rem}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ft{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center}
+.ft span{font-size:2rem}.ft h4{margin:6px 0 4px}.ft p{color:var(--mut);font-size:.85rem}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rv div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.rv small{color:var(--mut)}.rv .st{color:var(--g);letter-spacing:2px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.steps b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#000;margin-bottom:8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{color:var(--mut);margin-top:8px}
+/* shop */
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.tools select{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px}
+.chips button{white-space:nowrap;padding:8px 16px;border-radius:20px;background:var(--card);border:1px solid var(--line);color:var(--mut)}
+.chips button.on{background:var(--grad);color:#000;border-color:transparent;font-weight:700}
+.empty{text-align:center;color:var(--mut);padding:50px 0}
+/* product page */
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:20px}
+.pd .im img{border-radius:22px;width:100%;border:1px solid var(--line)}
+.pd h1{font-size:1.8rem;margin:6px 0}
+.pd .pr b{font-size:1.9rem}
+.pd ul{margin:14px 0;padding-inline-start:20px;color:var(--mut)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.qty button{width:36px;height:36px;font-size:1.2rem;background:var(--card2)}
+.qty span{min-width:38px;text-align:center;font-weight:700}
+/* cart drawer */
+.ov{position:fixed;inset:0;background:#000a;z-index:90;opacity:0;pointer-events:none;transition:.3s}
+.ov.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;bottom:0;inset-inline-start:0;width:min(400px,100%);background:var(--card);z-index:100;transform:translateX(-102%);transition:.35s;display:flex;flex-direction:column;border-inline-end:1px solid var(--line)}
+.dr.on{transform:none}
+.dr header{position:static;display:flex;justify-content:space-between;align-items:center;padding:16px;background:none}
+.ci{display:flex;gap:10px;padding:10px;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;align-items:center}
+.ci img{width:62px;height:62px;border-radius:10px;object-fit:cover}
+.ci div{flex:1;font-size:.9rem}
+.ci .x{color:var(--red);font-size:1.1rem}
+#cl{flex:1;overflow:auto;padding:0 16px}
+.dr footer{padding:16px;border-top:1px solid var(--line);display:grid;gap:10px}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem}
+/* checkout */
+.co{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;margin-top:20px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.box label{display:block;margin:10px 0 4px;color:var(--mut);font-size:.9rem}
+.box input,.box textarea,.box select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:11px;outline:0}
+.box input:focus,.box textarea:focus{border-color:var(--p)}
+.pay{display:flex;gap:8px;flex-wrap:wrap}
+.pay label{flex:1;margin:0;padding:10px;border:1px solid var(--line);border-radius:12px;text-align:center;cursor:pointer;color:var(--txt)}
+.pay input{width:auto;display:none}
+.pay label:has(input:checked){border-color:var(--c);background:#22d3ee15}
+.row{display:flex;justify-content:space-between;padding:6px 0;color:var(--mut)}
+/* footer */
+footer.f{margin-top:40px;border-top:1px solid var(--line);padding:32px 0;color:var(--mut)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
+.fg h5{color:var(--txt);margin-bottom:8px}.fg a{display:block;padding:3px 0}.fg a:hover{color:var(--c)}
+.cp{text-align:center;margin-top:24px;font-size:.85rem}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,90px);background:var(--card2);border:1px solid var(--c);padding:12px 22px;border-radius:14px;z-index:200;transition:.35s;font-weight:700}
+.toast.on{transform:translate(-50%,0)}
+.wa{position:fixed;bottom:20px;inset-inline-end:16px;width:54px;height:54px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:1.6rem;z-index:60;box-shadow:0 8px 24px #25d36655}
+.view{display:none}.view.on{display:block;animation:up .4s}
+@media(max-width:860px){
+ nav{position:fixed;top:64px;inset-inline:0;background:var(--card);flex-direction:column;padding:10px;border-bottom:1px solid var(--line);display:none;max-height:75vh;overflow:auto;margin:0}
+ nav.on{display:flex}.dd{position:static;display:block;border:0;box-shadow:none;padding:0 14px}
+ #menuBtn{display:grid}
+ .cats,.feat{grid-template-columns:repeat(2,1fr)}.rv,.steps{grid-template-columns:1fr}
+ .pd,.co{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}
+ .grid{grid-template-columns:repeat(2,1fr);gap:10px}.pc .b{padding:10px}.acts{flex-direction:column}
+ .slide{padding:22px}.hero{min-height:300px}.slide .big{opacity:.25}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="bar">
+   <button class="ib" id="menuBtn" aria-label="القائمة">☰</button>
+   <a href="#home" class="logo"><i>👑</i><span>AZ_<b>KING</b>.STORE</span></a>
+   <nav id="nav"></nav>
+   <div class="sp"></div>
+   <button class="ib" id="cartBtn" aria-label="السلة">🛒<em id="cc">0</em></button>
+  </div>
+  <form class="sb" id="sf"><input id="q" type="search" placeholder="ابحث عن لعبة، اشتراك، بطاقة..." autocomplete="off"><button class="btn">بحث</button></form>
+ </div>
+</header>
+ 
+<main class="wrap">
+ <!-- HOME -->
+ <div class="view" id="v-home">
+  <div class="hero" id="hero"></div>
+  <div class="tick"><div id="tk"></div></div>
+  <section><div class="sh"><h2>الأقسام</h2></div><div class="cats" id="cats"></div></section>
+  <section><div class="sh"><h2>عروض اليوم <span class="tag">🔥 لفترة محدودة</span></h2><a class="btn o sm" href="#shop/offers">عرض الكل</a></div><div class="grid" id="g-off"></div></section>
+  <section><div class="sh"><h2>الأكثر مبيعًا</h2><a class="btn o sm" href="#shop/best">عرض الكل</a></div><div class="grid" id="g-best"></div></section>
+  <section><div class="sh"><h2>وصل حديثًا</h2><a class="btn o sm" href="#shop/new">عرض الكل</a></div><div class="grid" id="g-new"></div></section>
+  <section><div class="sh"><h2>لماذا AZ_KING.STORE؟</h2></div>
+   <div class="feat">
+    <div class="ft"><span>⚡</span><h4>تسليم سريع</h4><p>معظم الطلبات تُنجز خلال دقائق.</p></div>
+    <div class="ft"><span>🛡️</span><h4>ضمان على المنتجات</h4><p>استبدال أو استرجاع عند وجود مشكلة مؤكدة.</p></div>
+    <div class="ft"><span>💳</span><h4>طرق دفع متعددة</h4><p>نوفر لك الطريقة المناسبة عبر المحادثة.</p></div>
+    <div class="ft"><span>💬</span><h4>دعم 24/7</h4><p>فريق جاهز للرد على واتساب وتيليجرام.</p></div>
+   </div></section>
+  <section><div class="sh"><h2>آراء العملاء</h2></div>
+   <div class="rv">
+    <div><span class="st">★★★★★</span><p>وصلني الشحن بسرعة والتعامل محترم جدًا. أنصح به.</p><small>— أمين، الجزائر</small></div>
+    <div><span class="st">★★★★★</span><p>اشتريت اشتراكًا واشتغل مباشرة، والدعم رد عليّ في دقائق.</p><small>— سارة، وهران</small></div>
+    <div><span class="st">★★★★☆</span><p>أسعار منافسة وخدمة ممتازة، سأكرر الطلب بالتأكيد.</p><small>— يوسف، قسنطينة</small></div>
+   </div></section>
+  <section><div class="sh"><h2>كيف تشتري؟</h2></div>
+   <div class="steps">
+    <div><b>1</b><h4>اختر المنتج</h4><p style="color:var(--mut)">تصفح الأقسام أو استخدم البحث.</p></div>
+    <div><b>2</b><h4>أضفه للسلة وأكمل الطلب</h4><p style="color:var(--mut)">أدخل بياناتك مثل المعرّف أو البريد.</p></div>
+    <div><b>3</b><h4>أرسل الطلب</h4><p style="color:var(--mut)">يُرسل الطلب جاهزًا عبر واتساب أو تيليجرام وفريقنا يكمل معك.</p></div>
+   </div></section>
+  <section><div class="sh"><h2>أسئلة شائعة</h2></div>
+   <details><summary>كم تستغرق مدة التسليم؟</summary><p>غالبًا من دقائق إلى بضع ساعات حسب نوع المنتج وتأكيد الدفع.</p></details>
+   <details><summary>ما طرق الدفع المتوفرة؟</summary><p>نحدد لك أنسب طريقة دفع أثناء المحادثة بعد إرسال الطلب.</p></details>
+   <details><summary>ماذا لو واجهت مشكلة في طلبي؟</summary><p>تواصل معنا فورًا مع إثبات (لقطة شاشة)، وسنوفر استبدالًا أو حلًا مناسبًا حسب سياسة الضمان.</p></details>
+  </section>
+ </div>
+ 
+ <!-- SHOP -->
+ <div class="view" id="v-shop">
+  <div class="sh" style="margin-top:20px"><h2 id="st">كل المنتجات</h2><a class="btn o sm" href="#home">← الرئيسية</a></div>
+  <div class="chips" id="chips"></div>
+  <div class="tools">
+   <select id="srt"><option value="pop">الأكثر شعبية</option><option value="new">الأحدث</option><option value="lo">السعر: من الأقل</option><option value="hi">السعر: من الأعلى</option></select>
+   <span id="cnt" style="color:var(--mut);align-self:center"></span>
+  </div>
+  <div class="grid" id="g-shop"></div>
+ </div>
+ 
+ <!-- PRODUCT -->
+ <div class="view" id="v-prod"><div id="pdbox"></div>
+  <section><div class="sh"><h2>قد يعجبك أيضًا</h2></div><div class="grid" id="g-rel"></div></section></div>
+ 
+ <!-- CHECKOUT -->
+ <div class="view" id="v-co">
+  <div class="sh" style="margin-top:20px"><h2>إتمام الطلب</h2><a class="btn o sm" href="#shop">← متابعة التسوق</a></div>
+  <div class="co">
+   <form class="box" id="cof">
+    <label>الاسم الكامل *</label><input id="fn" required>
+    <label>رقم الهاتف *</label><input id="fp" type="tel" required inputmode="tel" placeholder="05XXXXXXXX">
+    <label>البريد أو معرّف اللاعب / الحساب (إن لزم)</label><input id="fe" placeholder="User ID / Email">
+    <label>طريقة الدفع المفضلة</label>
+    <div class="pay">
+     <label><input type="radio" name="pm" value="بريدي موب / CCP" checked>بريدي موب / CCP</label>
+     <label><input type="radio" name="pm" value="Flexy">Flexy</label>
+     <label><input type="radio" name="pm" value="USDT / Binance">USDT / Binance</label>
+     <label><input type="radio" name="pm" value="PayPal">PayPal</label>
+    </div>
+    <label>إرسال الطلب عبر</label>
+    <select id="app"><option value="wa">واتساب</option><option value="tg">تيليجرام</option></select>
+    <label>ملاحظات</label><textarea id="fnote" rows="3"></textarea>
+    <button class="btn" style="width:100%;margin-top:14px">إرسال الطلب ✔</button>
+   </form>
+   <div class="box"><h3 style="margin-bottom:10px">ملخص الطلب</h3><div id="sum"></div></div>
+  </div>
+ </div>
+</main>
+ 
+<footer class="f"><div class="wrap">
+ <div class="fg">
+  <div><div class="logo" style="margin-bottom:8px"><i>👑</i><span>AZ_<b>KING</b>.STORE</span></div><p>وجهتك للألعاب والاشتراكات وشحن الألعاب وبطاقات الهدايا الرقمية. تسليم سريع ودعم مستمر.</p></div>
+  <div><h5>روابط</h5><a href="#home">الرئيسية</a><a href="#shop/best">الأكثر مبيعًا</a><a href="#shop/offers">العروض</a></div>
+  <div><h5>الأقسام</h5><div id="fcats"></div></div>
+  <div><h5>تواصل</h5><a id="fwa" target="_blank" rel="noopener">واتساب</a><a id="ftg" target="_blank" rel="noopener">تيليجرام</a></div>
+ </div>
+ <p class="cp">© 2026 AZ_KING.STORE — جميع الحقوق محفوظة</p>
+</div></footer>
+ 
+<a class="wa" id="waF" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+<div class="ov" id="ov"></div>
+<aside class="dr" id="dr"><header><h3>🛒 سلة المشتريات</h3><button class="ib" id="cx">✕</button></header><div id="cl"></div>
+ <footer><div class="tot"><span>الإجمالي</span><span id="ct">0 دج</span></div><a class="btn" href="#checkout" id="cgo">إتمام الطلب</a><button class="btn o" id="cclr">إفراغ السلة</button></footer></aside>
+<div class="toast" id="toast"></div>
+ 
+<script>
+"use strict";
+/* ===== الإعدادات: عدّل هنا ===== */
+const CFG={
+  WHATSAPP:"213552411377",          // رقمك بالصيغة الدولية بدون + (مثال: 213550000000)
+  TELEGRAM:"uytfaziz2135",          // اسم مستخدم تيليجرام بدون @
+  CUR:"دج"
+};
+/* ===== الأقسام ===== */
+const CATS=[
+ {id:"games",n:"الألعاب",ic:"🎮",sub:["مفاتيح PC","مفاتيح الكونسول","حسابات ألعاب"]},
+ {id:"subs",n:"الاشتراكات",ic:"📺",sub:["بث وأفلام","موسيقى","أدوات ذكاء اصطناعي","VPN وحماية"]},
+ {id:"topup",n:"شحن الألعاب",ic:"⚡",sub:["شحن ألعاب الهاتف","شحن ألعاب PC","شحن التطبيقات"]},
+ {id:"gift",n:"بطاقات الهدايا",ic:"🎁",sub:["بطاقات الألعاب","بطاقات المنصات","بطاقات التطبيقات"]}
+];
+/* ===== المنتجات: عدّل الأسعار والأسماء كما تريد ===== */
+const P=[
+ {id:1,n:"مفتاح لعبة أكشن PC",c:"games",s:"مفاتيح PC",p:1500,o:3200,d:"مفتاح تفعيل رسمي للعبة أكشن على الكمبيوتر.",ic:"🎮",h:[270,200],best:1,off:1},
+ {id:2,n:"مفتاح لعبة كونسول",c:"games",s:"مفاتيح الكونسول",p:1500,o:5000,d:"كود لعبة جاهز للتفعيل على منصتك.",ic:"🕹️",h:[330,260],best:1},
+ {id:3,n:"حساب ألعاب جاهز",c:"games",s:"حسابات ألعاب",p:1800,d:"حساب ألعاب بمكتبة ألعاب جاهزة ويمكنك تغيير بياناته.",ic:"👤",h:[200,160],new:1},
+ {id:4,n:"اشتراك بث وأفلام - شهر",c:"subs",s:"بث وأفلام",p:1000,o:1300,d:"اشتراك شخصي لمدة شهر كامل بجودة عالية.",ic:"🎬",h:[350,300],best:1,off:1},
+ {id:5,n:"اشتراك موسيقى - 3 أشهر",c:"subs",s:"موسيقى",p:1000,d:"استمع بلا إعلانات ولمدة 3 أشهر.",ic:"🎧",h:[160,280],new:1},
+ {id:6,n:"أداة ذكاء اصطناعي - شهر",c:"subs",s:"أدوات ذكاء اصطناعي",p:2000,o:2800,d:"اشتراك أداة ذكاء اصطناعي للكتابة والتصميم.",ic:"🤖",h:[250,190],best:1,new:1},
+ {id:7,n:"VPN سريع - سنة",c:"subs",s:"VPN وحماية",p:500,d:"حماية وخصوصية عبر خوادم متعددة لمدة سنة.",ic:"🛡️",h:[180,220]},
+ {id:8,n:"شحن جواهر لعبة هاتف",c:"topup",s:"شحن ألعاب الهاتف",p:800,d:"شحن مباشر عبر معرّف اللاعب خلال دقائق.",ic:"💎",h:[300,340],best:1},
+ {id:9,n:"شحن عملات لعبة قتال",c:"topup",s:"شحن ألعاب الهاتف",p:1000,d:"شحن عملات اللعبة مباشرة إلى حسابك.",ic:"🔥",h:[10,340],best:1},
+ {id:10,n:"شحن رصيد PC",c:"topup",s:"شحن ألعاب PC",p:1200,d:"شحن رصيد داخل الألعاب على الكمبيوتر.",ic:"🖥️",h:[210,250],new:1},
+ {id:11,n:"شحن تطبيق",c:"topup",s:"شحن التطبيقات",p:700,d:"شحن رصيد التطبيقات والخدمات الشائعة.",ic:"📲",h:[140,200]},
+ {id:12,n:"بطاقة ألعاب 10$",c:"gift",s:"بطاقات الألعاب",p:2300,d:"بطاقة رقمية بقيمة 10 دولار للألعاب.",ic:"🎁",h:[280,320],best:1},
+ {id:13,n:"بطاقة منصة 25$",c:"gift",s:"بطاقات المنصات",p:5600,o:6200,d:"بطاقة رصيد منصة بقيمة 25 دولار.",ic:"💳",h:[190,230],off:1,best:1},
+ {id:14,n:"بطاقة تطبيقات 15$",c:"gift",s:"بطاقات التطبيقات",p:3400,d:"بطاقة رقمية لمتاجر التطبيقات بقيمة 15 دولار.",ic:"📱",h:[220,270],new:1},
+ {id:15,n:"بطاقة ألعاب 50$",c:"gift",s:"بطاقات الألعاب",p:11000,o:12000,d:"أفضل قيمة لعشاق الألعاب، تسليم فوري.",ic:"👑",h:[45,25],off:1,new:1},
+ {id:16,n:"حساب ألعاب بريميوم",c:"games",s:"حسابات ألعاب",p:4500,d:"حساب بمكتبة كبيرة من الألعاب الحديثة.",ic:"⭐",h:[40,300],best:1}
+];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=n=>n.toLocaleString("en-US")+" "+CFG.CUR;
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+/* صور المنتجات: SVG مولّدة محليًا (لا توجد صور مكسورة) */
+const art=p=>{const[a,b]=p.h;const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${a},75%,38%)"/><stop offset="1" stop-color="hsl(${b},80%,22%)"/></linearGradient></defs><rect width="400" height="300" fill="url(#g)"/><circle cx="330" cy="50" r="90" fill="#fff" opacity=".08"/><circle cx="60" cy="270" r="110" fill="#fff" opacity=".07"/><text x="200" y="175" font-size="120" text-anchor="middle">${p.ic}</text><text x="200" y="265" font-size="20" font-weight="700" fill="#fff" fill-opacity=".8" text-anchor="middle" font-family="Arial">AZ_KING.STORE</text></svg>`;return"data:image/svg+xml;utf8,"+encodeURIComponent(svg)};
+/* ===== السلة ===== */
+let cart=[];try{cart=JSON.parse(localStorage.getItem("azk_cart")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("azk_cart",JSON.stringify(cart))}catch(e){}};
+const byId=id=>P.find(x=>x.id==id);
+cart=cart.filter(i=>byId(i.id));
+function add(id,q=1){const i=cart.find(x=>x.id==id);i?i.q+=q:cart.push({id:+id,q});save();renderCart();toast("تمت الإضافة إلى السلة ✔")}
+function chg(id,d){const i=cart.find(x=>x.id==id);if(!i)return;i.q+=d;if(i.q<1)cart=cart.filter(x=>x.id!=id);save();renderCart()}
+function del(id){cart=cart.filter(x=>x.id!=id);save();renderCart()}
+const total=()=>cart.reduce((s,i)=>s+byId(i.id).p*i.q,0);
+function renderCart(){
+ $("#cc").textContent=cart.reduce((s,i)=>s+i.q,0);
+ $("#cl").innerHTML=cart.length?cart.map(i=>{const p=byId(i.id);return`<div class="ci"><img src="${art(p)}" alt=""><div><b>${esc(p.n)}</b><br><span style="color:var(--c)">${fmt(p.p*i.q)}</span><br><span class="qty"><button data-q="${p.id}" data-d="-1">−</button><span>${i.q}</span><button data-q="${p.id}" data-d="1">+</button></span></div><button class="x" data-del="${p.id}" aria-label="حذف">🗑</button></div>`}).join(""):'<div class="empty">السلة فارغة 🛒</div>';
+ $("#ct").textContent=fmt(total());
+ $("#cgo").style.display=$("#cclr").style.display=cart.length?"":"none";
+ if(location.hash==="#checkout")renderCo();
+}
+const cartOpen=o=>{$("#dr").classList.toggle("on",o);$("#ov").classList.toggle("on",o)};
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),1800)}
+/* ===== البطاقات ===== */
+function card(p,i=0){return`<div class="pc" style="animation-delay:${i*40}ms"><div class="im" data-go="${p.id}">${p.o?`<span class="bd">-${Math.round((1-p.p/p.o)*100)}%</span>`:p.new?'<span class="bd n">جديد</span>':""}<img loading="lazy" src="${art(p)}" alt="${esc(p.n)}"></div><div class="b"><h3>${esc(p.n)}</h3><p>${esc(p.d)}</p><div class="pr"><b>${fmt(p.p)}</b>${p.o?`<s>${fmt(p.o)}</s>`:""}</div><div class="acts"><a class="btn o" href="#product/${p.id}">التفاصيل</a><button class="btn" data-add="${p.id}">🛒 أضف</button></div></div></div>`}
+const fill=(sel,list)=>{$(sel).innerHTML=list.length?list.map(card).join(""):'<div class="empty" style="grid-column:1/-1">لا توجد منتجات مطابقة.</div>'};
+/* ===== الصفحات ===== */
+let slideI=0,slideT;
+function buildHome(){
+ const S=[["أهلًا بك في AZ_KING.STORE 👑","كل ما تحتاجه من ألعاب واشتراكات وشحن وبطاقات في مكان واحد.","🎮","#shop","linear-gradient(120deg,#2a1068,#0b3b6b)"],
+  ["عروض اليوم حتى -30%","أسعار خاصة لفترة محدودة على أشهر المنتجات الرقمية.","🔥","#shop/offers","linear-gradient(120deg,#6b1038,#2a1068)"],
+  ["شحن ألعاب فوري","اشحن حسابك خلال دقائق بأفضل الأسعار.","💎","#shop/topup","linear-gradient(120deg,#0b4f5c,#1d1068)"],
+  ["بطاقات هدايا رقمية","بطاقات للألعاب والمنصات والتطبيقات.","🎁","#shop/gift","linear-gradient(120deg,#5c3b0b,#2a1068)"]];
+ $("#hero").innerHTML=S.map((s,i)=>`<div class="slide${i?"":" on"}" style="background:${s[4]}"><div class="t"><h1>${s[0]}</h1><p>${s[1]}</p><a class="btn" href="${s[3]}">تسوّق الآن ←</a></div><div class="big">${s[2]}</div></div>`).join("")+`<div class="dots">${S.map((_,i)=>`<button data-sl="${i}" class="${i?"":"on"}" aria-label="شريحة ${i+1}"></button>`).join("")}</div>`;
+ const T=["💳 Visa","💳 Mastercard","🅿️ PayPal","₿ Bitcoin","💲 USDT","🟡 Binance","📮 بريدي موب","📲 Flexy","🏦 تحويل بنكي"];
+ $("#tk").innerHTML=[...T,...T].map(t=>`<span>${t}</span>`).join("");
+ $("#cats").innerHTML=CATS.map(c=>`<a class="cat" href="#shop/${c.id}"><span>${c.ic}</span><b>${c.n}</b></a>`).join("");
+ fill("#g-off",P.filter(p=>p.off).slice(0,4));fill("#g-best",P.filter(p=>p.best).slice(0,8));fill("#g-new",P.filter(p=>p.new).slice(0,4));
+}
+function slide(i){const s=$$(".slide"),d=$$(".dots button");slideI=(i+s.length)%s.length;s.forEach((e,k)=>e.classList.toggle("on",k==slideI));d.forEach((e,k)=>e.classList.toggle("on",k==slideI))}
+function autoSlide(){clearInterval(slideT);slideT=setInterval(()=>slide(slideI+1),5000)}
+let shopF={cat:"all",sub:"",q:""};
+function renderShop(){
+ const pseudo={best:"الأكثر مبيعًا",offers:"عروض اليوم",new:"وصل حديثًا"};
+ const cats=[["all","الكل"],["best","الأكثر مبيعًا"],["offers","العروض"],["new","الجديد"],...CATS.map(c=>[c.id,c.n])];
+ $("#chips").innerHTML=cats.map(c=>`<button data-cat="${c[0]}" class="${shopF.cat==c[0]?"on":""}">${c[1]}</button>`).join("");
+ let L=P.filter(p=>{
+  if(shopF.cat=="best"&&!p.best)return false;if(shopF.cat=="offers"&&!p.off)return false;if(shopF.cat=="new"&&!p.new)return false;
+  if(!pseudo[shopF.cat]&&shopF.cat!="all"&&p.c!=shopF.cat)return false;
+  if(shopF.sub&&p.s!=shopF.sub)return false;
+  if(shopF.q&&!(p.n+p.d+p.s).toLowerCase().includes(shopF.q.toLowerCase()))return false;return true});
+ const so=$("#srt").value;
+ L.sort((a,b)=>so=="lo"?a.p-b.p:so=="hi"?b.p-a.p:so=="new"?b.id-a.id:(b.best||0)-(a.best||0));
+ const cn=(CATS.find(c=>c.id==shopF.cat)||{}).n;
+ $("#st").textContent=shopF.q?`نتائج البحث: ${shopF.q}`:shopF.sub||pseudo[shopF.cat]||cn||"كل المنتجات";
+ $("#cnt").textContent=L.length+" منتج";fill("#g-shop",L);
+}
+function renderProd(id){
+ const p=byId(id);if(!p){location.hash="#shop";return}
+ $("#pdbox").innerHTML=`<div class="pd"><div class="im"><img src="${art(p)}" alt="${esc(p.n)}"></div><div><a href="#shop/${p.c}" style="color:var(--c)">${esc(CATS.find(c=>c.id==p.c).n)} › ${esc(p.s)}</a><h1>${esc(p.n)}</h1><div class="pr"><b>${fmt(p.p)}</b>${p.o?`<s>${fmt(p.o)}</s><span class="bd" style="position:static">-${Math.round((1-p.p/p.o)*100)}%</span>`:""}</div><p style="margin-top:10px;color:var(--mut)">${esc(p.d)}</p><ul><li>تسليم سريع بعد تأكيد الدفع</li><li>ضمان استبدال عند وجود مشكلة مؤكدة</li><li>دعم مباشر عبر واتساب وتيليجرام</li></ul><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span class="qty"><button id="pm">−</button><span id="pq">1</span><button id="pp">+</button></span><button class="btn" id="pa">🛒 أضف إلى السلة</button><button class="btn o" id="pb">اشترِ الآن</button></div></div></div>`;
+ let q=1;const set=n=>{q=Math.max(1,Math.min(20,n));$("#pq").textContent=q};
+ $("#pm").onclick=()=>set(q-1);$("#pp").onclick=()=>set(q+1);$("#pa").onclick=()=>add(p.id,q);$("#pb").onclick=()=>{add(p.id,q);location.hash="#checkout"};
+ fill("#g-rel",P.filter(x=>x.c==p.c&&x.id!=p.id).slice(0,4));document.title=p.n+" | AZ_KING.STORE";
+}
+function renderCo(){
+ $("#sum").innerHTML=cart.length?cart.map(i=>{const p=byId(i.id);return`<div class="row"><span>${esc(p.n)} × ${i.q}</span><span>${fmt(p.p*i.q)}</span></div>`}).join("")+`<div class="row" style="border-top:1px solid var(--line);margin-top:8px;padding-top:12px;color:var(--txt);font-weight:800;font-size:1.1rem"><span>الإجمالي</span><span>${fmt(total())}</span></div>`:'<div class="empty">السلة فارغة. <a href="#shop" style="color:var(--c)">تسوّق الآن</a></div>';
+}
+function route(){
+ const h=(location.hash||"#home").slice(1),[a,b]=h.split("/");let v="home";
+ $("#nav").classList.remove("on");cartOpen(false);document.title="AZ_KING.STORE | المنتجات الرقمية";
+ if(a=="shop"){v="shop";if(!fromSearch)$("#q").value="";shopF.q=$("#q").value.trim();fromSearch=false;shopF.sub="";shopF.cat="all";
+  if(b){if(b.startsWith("sub-")){const s=decodeURIComponent(b.slice(4)),c=CATS.find(c=>c.sub.includes(s));shopF.cat=c?c.id:"all";shopF.sub=s}else shopF.cat=b}
+  renderShop()}
+ else if(a=="product"){v="prod";renderProd(b)}
+ else if(a=="checkout"){v="co";renderCo()}
+ $$(".view").forEach(e=>e.classList.toggle("on",e.id=="v-"+v));scrollTo(0,0);
+}
+/* ===== التنقل ===== */
+$("#nav").innerHTML='<a href="#home">الرئيسية</a><a href="#shop/best">الأكثر مبيعًا</a>'+CATS.map(c=>`<div><button>${c.ic} ${c.n} ▾</button><div class="dd"><a href="#shop/${c.id}">عرض الكل</a>${c.sub.map(s=>`<a href="#shop/sub-${encodeURIComponent(s)}">${s}</a>`).join("")}</div></div>`).join("")+'<a href="#shop/offers">🔥 العروض</a>';
+$("#fcats").innerHTML=CATS.map(c=>`<a href="#shop/${c.id}">${c.n}</a>`).join("");
+const wa=t=>`https://wa.me/${CFG.WHATSAPP}?text=${encodeURIComponent(t||"مرحبًا AZ_KING.STORE")}`;
+const tg=t=>CFG.TELEGRAM?`https://t.me/${CFG.TELEGRAM}?text=${encodeURIComponent(t||"")}`:`https://t.me/share/url?url=%20&text=${encodeURIComponent(t||"")}`;
+["#fwa","#waF"].forEach(s=>$(s).href=wa());$("#ftg").href=tg("مرحبًا AZ_KING.STORE");
+document.addEventListener("click",e=>{
+ const t=e.target.closest("[data-add],[data-go],[data-q],[data-del],[data-cat],[data-sl]");if(!t)return;
+ const d=t.dataset;
+ if(d.add)add(d.add);else if(d.go)location.hash="#product/"+d.go;
+ else if(d.q)chg(d.q,+d.d);else if(d.del)del(d.del);
+ else if(d.cat){location.hash="#shop/"+d.cat}
+ else if(d.sl){slide(+d.sl);autoSlide()}
+});
+$("#cartBtn").onclick=()=>cartOpen(true);$("#cx").onclick=$("#ov").onclick=()=>cartOpen(false);
+$("#cgo").onclick=()=>cartOpen(false);
+$("#cclr").onclick=()=>{cart=[];save();renderCart()};
+$("#menuBtn").onclick=()=>$("#nav").classList.toggle("on");
+$("#srt").onchange=renderShop;
+let fromSearch=false;
+$("#sf").onsubmit=e=>{e.preventDefault();fromSearch=true;if(location.hash==="#shop")route();else location.hash="#shop"};
+$("#cof").onsubmit=e=>{
+ e.preventDefault();if(!cart.length){toast("السلة فارغة");return}
+ const pm=document.querySelector("input[name=pm]:checked").value;
+ const L=cart.map(i=>{const p=byId(i.id);return`• ${p.n} × ${i.q} = ${fmt(p.p*i.q)}`}).join("\n");
+ const msg=`🛒 طلب جديد من AZ_KING.STORE\n\n${L}\n\nالإجمالي: ${fmt(total())}\n\nالاسم: ${$("#fn").value}\nالهاتف: ${$("#fp").value}\nالمعرّف/البريد: ${$("#fe").value||"-"}\nالدفع: ${pm}\nملاحظات: ${$("#fnote").value||"-"}`;
+ window.open($("#app").value=="wa"?wa(msg):tg(msg),"_blank");
+ cart=[];save();renderCart();toast("تم تجهيز طلبك ✔ أكمله في المحادثة");
+};
+addEventListener("hashchange",route);
+buildHome();renderCart();autoSlide();route();
+</script>
+</body>
+</html>
+ 
+Claude finished the response
